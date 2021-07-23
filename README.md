@@ -5,6 +5,7 @@ Attempting to play [Bad Apple! PV](https://www.youtube.com/watch?v=FtutLA63Cp8) 
 
 | Application | Code | Video |
 |-------------|------|-------|
-| MS Notepad  | [ms-notepad](https://github.com/Boomaa23/open-ds/tree/master/ms-notepad) | [yt/T1t0VAdNvHo](https://youtu.be/T1t0VAdNvHo) |
+| MS Notepad  | [ms-notepad](https://github.com/Boomaa23/bad-apple/tree/master/ms-notepad) | [yt/T1t0VAdNvHo](https://youtu.be/T1t0VAdNvHo) |
+| Terminal  | [terminal](https://github.com/Boomaa23/bad-apple/tree/master/terminal) | [yt/eNH-gYg5hgY](https://youtu.be/eNH-gYg5hgY) |
 
 Video must be downloaded with [youtube-dl](https://ytdl-org.github.io/youtube-dl/index.html) (or similar) to repo root folder as `ba-src.mp4` to run code.

@@ -36,8 +36,8 @@ def main():
         pyautogui.typewrite('process.txt')
         pyautogui.press('enter')
         
-        cv2.imshow("ms-notepad", image)
-        cv2.moveWindow("ms-notepad", 1000,30)
+        cv2.imshow("bad-apple", image)
+        cv2.moveWindow("bad-apple", 1000,30)
         cv2.waitKey(1)
         
         out_file.truncate(0)
