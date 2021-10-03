@@ -1,19 +1,24 @@
 import cv2
+import os
 import shutil
 import time
 
 delay_time_sec = 2
+disp_size = (17, 11)
+skip_frames = 0
 
 def main():
+    if not os.path.exists('../ba-src.mp4'):
+        raise FileNotFoundError('Source video not found')
     video = cv2.VideoCapture('../ba-src.mp4')
-    for i in range(0):
+    for i in range(skip_frames):
         video.read()
 
     total = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
 
     retcode, image = video.read()
     image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    image = cv2.resize(image, (23, 12))
+    image = cv2.resize(image, disp_size)
 
     width, height = image.shape
     for x in range(width):
@@ -32,7 +37,7 @@ def main():
 
     while retcode:
         image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-        image = cv2.resize(image, (23, 12))
+        image = cv2.resize(image, disp_size)
         width, height = image.shape
         
         for x in range(width):
